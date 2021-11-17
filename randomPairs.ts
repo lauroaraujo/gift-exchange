@@ -34,13 +34,13 @@ export function selectRandomPairs (namesList: string[], randomFn: () => number =
 /**
  * Takes an array of strings and  randomizes its items positions (shuffles it).
  *
- * @param array Array of strings with at least 3 elements.
+ * @param array Array of strings.
  * @param randomFn Optional random functions (used Math.random as default)
  * @returns A new array with the same elements as the original array, but in a random order.
  *          Please note that this can return the same order, especially for small arrays.
  */
 export function randomizeStringArray (array: string[], randomFn: () => number = Math.random) {
-  if (array.length < 3) {
+  if (array.length < 2) {
     return [...array]
   }
 
