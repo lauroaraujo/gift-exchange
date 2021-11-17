@@ -1,5 +1,5 @@
 import {  assertEquals, assertNotEquals, assertNotStrictEquals } from 'https://deno.land/std@0.114.0/testing/asserts.ts';
-import { randomizeStringArray, selectRandomPairs } from './index.ts'
+import { randomizeStringArray, selectRandomPairs } from './randomPairs.ts'
 
 Deno.test('selectRandomPairs returns an empty array if given less than three names', () => {
   assertEquals(selectRandomPairs([]), [])
