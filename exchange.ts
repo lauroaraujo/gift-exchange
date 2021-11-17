@@ -7,13 +7,13 @@ function exchange () {
 
   if (namesList.length === 0) {
     console.log('Usage:')
-    console.log('deno exchange.ts name1 name2 name3 ... nameN\n')
+    console.log('deno run exchange.ts name1 name2 name3 ... nameN\n')
     console.log('At least 3 names are required, and no repetitions are allowed.')
     return
   }
 
   if (namesList.length < 3) {
-    console.log('Please pass at least 3 names')
+    console.log('Please pass at least 3 names.')
     return
   }
 
