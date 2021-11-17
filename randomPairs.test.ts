@@ -8,6 +8,7 @@ Deno.test('selectRandomPairs returns an empty array if given less than three nam
 })
 
 Deno.test('selectRandomPairs returns an array with unique pair objects', () => {
+  // Mock Math.random with predictable results
   const RANDOM_RESULTS = [0.4, 0.3, 0, 0.2, 0.1]
   const mockRandomFn = () => RANDOM_RESULTS.shift() ?? 0
 
